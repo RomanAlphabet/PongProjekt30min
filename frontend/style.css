@@ -1,0 +1,81 @@
+body {
+  background: #181818;
+  color: #f1f1f1;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#game-container {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  background: #222;
+  border-radius: 16px;
+  box-shadow: 0 0 32px #000a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#pong-canvas {
+  background: #111;
+  border: 2px solid #444;
+  border-radius: 8px;
+  margin-top: 24px;
+}
+#scoreboard {
+  margin: 16px 0;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+#endgame-modal {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(24,24,24,0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+#endgame-modal.hidden {
+  display: none;
+}
+#endgame-content {
+  background: #222;
+  padding: 32px 48px;
+  border-radius: 12px;
+  box-shadow: 0 0 16px #000a;
+  text-align: center;
+}
+#username {
+  margin: 16px 0;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #181818;
+  color: #f1f1f1;
+}
+#save-score-btn, #play-again-btn {
+  margin: 8px;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 6px;
+  background: #444;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#save-score-btn:hover, #play-again-btn:hover {
+  background: #666;
+}
+#highscores {
+  margin-top: 24px;
+  width: 100%;
+  background: #181818;
+  border-radius: 8px;
+  padding: 12px 0;
+  text-align: center;
+} 
